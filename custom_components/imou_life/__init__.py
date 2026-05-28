@@ -55,6 +55,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ImouConfigEntry) -> bool
     # --- Event push / webhook setup (optional, never blocks normal startup) ---
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN]["notify_services"] = []
+    hass.data[DOMAIN]["push_enabled"] = bool(entry.options.get(PARAM_ENABLE_EVENT_PUSH))
     hass.data[DOMAIN]["selected_devices"] = (
         entry.options.get(PARAM_SELECTED_DEVICES)
         or entry.data.get(PARAM_SELECTED_DEVICES, [])

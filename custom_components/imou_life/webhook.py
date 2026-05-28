@@ -16,7 +16,11 @@ _LOGGER = logging.getLogger(__name__)
 
 # Message types that are NOT alarm events (status / iot / stats)
 _NON_ALARM_TYPES = frozenset(
-    {"online", "offline", "close", "changeDevName", "iotEvent", "numberstat"}
+    {
+        "online", "offline", "close", "changeDevName",
+        "iotEvent", "iotProperty", "iotAction",
+        "numberstat",
+    }
 )
 
 
@@ -135,6 +139,11 @@ async def async_handle_imou_webhook(
     msg_type = event_data.get("msg_type")
     device_id = event_data.get("device_id")
     _LOGGER.debug("Received Imou push event: %s", event_data)
+
+    # Check: is push enabled? If user disabled it, silently ignore.
+    if not hass.data.get(DOMAIN, {}).get("push_enabled", False):
+        _LOGGER.debug("Push is disabled, ignoring event")
+        return web.Response(status=200, text="ok")
 
     # Filter: only process events from selected devices (if device selection is active)
     selected_devices = hass.data.get(DOMAIN, {}).get("selected_devices", [])
