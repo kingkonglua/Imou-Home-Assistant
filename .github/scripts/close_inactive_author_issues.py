@@ -12,7 +12,7 @@
 环境变量：
   GITHUB_TOKEN / GH_TOKEN — 需 issues:write（Actions 自动注入；本地可省略）
   GITHUB_REPOSITORY — owner/repo（Actions 自动注入；本地未设时默认本仓库）
-  MAINTAINERS — 逗号分隔的维护者登录名，默认 Imou-OpenPlatform
+  MAINTAINERS — 逗号分隔的维护者登录名，默认 kingkonglua
   STALE_AFTER_DAYS — 打 stale 标签的天数阈值，默认 21
   INACTIVE_DAYS — 关闭的天数阈值，默认 30（应 ≥ STALE_AFTER_DAYS）
   STALE_LABEL — 标签名，默认 stale（请在本仓库预先创建该 label，或首次在网页上建同名标签）
@@ -40,7 +40,7 @@ CLOSE_COMMENT = (
     "Feel free to reopen if you have any updates or further questions."
 )
 
-DEFAULT_OWNER = "Imou-OpenPlatform"
+DEFAULT_OWNER = "kingkonglua"
 DEFAULT_REPO_NAME = "Imou-Home-Assistant"
 
 _secrets_loaded = False
@@ -113,7 +113,7 @@ def _repo() -> tuple[str, str]:
 
 
 def _maintainers() -> frozenset[str]:
-    raw = (os.environ.get("MAINTAINERS") or "Imou-OpenPlatform").strip()
+    raw = (os.environ.get("MAINTAINERS") or "kingkonglua").strip()
     return frozenset(x.strip().lower() for x in raw.split(",") if x.strip())
 
 

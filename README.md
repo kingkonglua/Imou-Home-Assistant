@@ -13,14 +13,14 @@ This integration enables bidirectional communication between Home Assistant and 
 
 2: <b>Generate AppId and AppSecret.</b> After registration, proceed to the [Official Console](https://open.Imoulife.Com/consoleNew/myApp/appInfo) to complete your application details and generate an AppId and AppSecret;
 
-<img src="https://raw.githubusercontent.com/Imou-OpenPlatform/Imou-Home-Assistant/refs/heads/main/assets/images/appMsg.png" width="70%">
+<img src="https://raw.githubusercontent.com/kingkonglua/Imou-Home-Assistant/refs/heads/main/assets/images/appMsg.png" width="70%">
 
 3: <b>Navigate to HACS, search for `Imou Life`, and install the Imou component.</b> On the component login page, enter the obtained AppId and AppSecret. The URL address can be referenced from the [Interface Domain Name Description](https://open.Imoulife.Com/book/http/develop.Html) to obtain the recommended optimal domain URL;
 
-<img src="https://raw.githubusercontent.com/Imou-OpenPlatform/Imou-Home-Assistant/refs/heads/main/assets/images/login.png" width="70%">
+<img src="https://raw.githubusercontent.com/kingkonglua/Imou-Home-Assistant/refs/heads/main/assets/images/login.png" width="70%">
 
 4: <b>Integration completed.</b> At this point, you can view the devices under the Imou account.
-<img src="https://raw.githubusercontent.com/Imou-OpenPlatform/Imou-Home-Assistant/refs/heads/main/assets/images/list.png" width="70%">
+<img src="https://raw.githubusercontent.com/kingkonglua/Imou-Home-Assistant/refs/heads/main/assets/images/list.png" width="70%">
 
 >Note: <br>
 >The components is integrated with the Imou Open Platform for cloud-based remote device viewing. <br>

@@ -27,7 +27,7 @@ jobs:
       - name: Stale label then close when last comment is maintainer-only thread
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAINTAINERS: Imou-OpenPlatform
+          MAINTAINERS: kingkonglua
           STALE_AFTER_DAYS: "21"
           INACTIVE_DAYS: "30"
           STALE_LABEL: stale

@@ -1,10 +1,10 @@
 # Default owners for all files
-* @Imou-OpenPlatform
+* @kingkonglua
 
 # Integration code
-/custom_components/imou_life/ @Imou-OpenPlatform
+/custom_components/imou_life/ @kingkonglua
 
 # CI and governance
-/.github/ @Imou-OpenPlatform
-/pyproject.toml @Imou-OpenPlatform
-/script/ @Imou-OpenPlatform
+/.github/ @kingkonglua
+/pyproject.toml @kingkonglua
+/script/ @kingkonglua

@@ -131,7 +131,7 @@ Configure in GitHub → **Settings** → **Branches** → rule for `main`:
 - Require status checks: **Lint**, **Spell**, **YAML**, **Hassfest**, **HACS**, **Manifest**, **Test**
 - Dismiss stale approvals when new commits are pushed
 
-**HACS** runs only on the canonical repository `Imou-OpenPlatform/Imou-Home-Assistant`; fork PRs may skip it.
+**HACS** runs only on the canonical repository `kingkonglua/Imou-Home-Assistant`; fork PRs may skip it.
 
 ## Appendix: 中文快速指引
 
