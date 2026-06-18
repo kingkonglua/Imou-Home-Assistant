@@ -1,14 +1,14 @@
 {
   "domain": "imou_life",
-  "name": "Imou Life",
+  "name": "Imou Life Official",
   "codeowners": [
-    "@kingkonglua"
+    "@Imou-OpenPlatform"
   ],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://open.imoulife.com/book/guide/haDev.html",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/kingkonglua/Imou-Home-Assistant/issues",
+  "issue_tracker": "https://github.com/Imou-OpenPlatform/Imou-Home-Assistant/issues",
   "quality_scale": "bronze",
   "requirements": [
     "pyimouapi==1.2.8"

@@ -95,7 +95,7 @@ jobs:
 
   hacs:
     name: HACS
-    if: github.repository == 'kingkonglua/Imou-Home-Assistant'
+    if: github.repository == 'Imou-OpenPlatform/Imou-Home-Assistant'
     runs-on: ubuntu-latest
     steps:
       - uses: hacs/action@main
